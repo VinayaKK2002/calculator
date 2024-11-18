@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>Document</title>
+    <style>
+        button{
+            padding: 30px;
+            /* margin-top: 7px; */
+            margin: 7px 10px 0px 10px;
+            border-radius: 10px;
+            font-size: 40px;
+        }
+    </style>
+
+    
+</head>
+<body>
+    <h1 style="text-align: center;">CALCULATOR</h1>
+    <div style="border: solid;width: 500px;text-align: center;height: 750px;margin-left: 500px;background-color: cadetblue;border-radius: 20px;">
+        <input id="result" class="display" style="width: 400px;padding: 25px;margin-top: 30px;border-radius: 10px;font-size: 40px; " type="text" readonly placeholder="0">
+        <div style="margin-top: 20px;width: 100%;height: 450px; ">
+             <button onclick="displaycontent('7')" >7</button>
+             <button onclick="displaycontent('8')" >8</button>
+             <button onclick="displaycontent('9')" >9</button>
+             <button onclick="displaycontent('+')" style="background-color: rgb(53, 50, 50);color: aliceblue;" >+</button>
+             <button onclick="displaycontent('4')">4</button>
+             <button onclick="displaycontent('5')">5</button>
+             <button onclick="displaycontent('6')">6</button>
+             <button onclick="displaycontent('-')" style="background-color: rgb(53, 50, 50);color: aliceblue;" >-</button>
+             <button onclick="displaycontent('1')">1</button>
+             <button onclick="displaycontent('2')" >2</button>
+             <button onclick="displaycontent('3')">3</button>
+             <button onclick="displaycontent('*')" style="background-color: rgb(53, 50, 50);color: aliceblue;" >*</button>
+             <button onclick="calclear()" style="background-color: red;color: aliceblue;">C</button>
+             <button onclick="displaycontent('0')">0</button>
+             <button onclick="calcouput()"  style="background-color: rgb(53, 50, 50);color: aliceblue;" >=</button>
+             <button onclick="displaycontent('/')" style="background-color: rgb(53, 50, 50);color: aliceblue;" >/</button>
+             <button onclick="removelast()" style="background-color: rgb(70, 65, 65);color: aliceblue;padding: 10px 180px 10px 180px;" >&#9003</button>
+
+
+
+        </div>
+    </div>
+</body>
+<script src="./main.js"></script>
+</html>
